@@ -1,0 +1,7 @@
+/*.html
+!public/**
+node_modules
+.git
+.env*
+test
+test-results

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d0b">
+  <title>Launching - Eagler Vault</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/play.js"></script>
+</head>
+<body>
+  <main class="play-page">
+    <a class="brand" href="/"><img src="/icon.svg" width="36" height="36" alt=""> EAGLER<span>VAULT</span></a>
+    <h1 id="play-title">Preparing your client.</h1>
+    <p id="play-status" role="status">Opening browser storage...</p>
+    <progress id="play-progress" max="100" value="0" aria-label="Client download progress"></progress>
+    <p>Keep this tab open while downloading. After saving, the client launches directly from browser storage.</p>
+    <button class="button outline" id="cancel-play">Cancel download</button>
+    <a class="button primary" href="/">Back to library</a>
+    <p id="play-error" class="notice" role="alert" hidden></p>
+  </main>
+</body>
+</html>

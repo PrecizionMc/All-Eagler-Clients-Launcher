@@ -1,0 +1,21 @@
+{
+  "name": "eagler-vault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.9.0" },
+  "scripts": {
+    "catalog": "node scripts/catalog.mjs",
+    "upload": "node --env-file-if-exists=.env.local scripts/upload.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "node --env-file-if-exists=.env.local scripts/build.mjs",
+    "test": "node --test test/*.test.js",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}
